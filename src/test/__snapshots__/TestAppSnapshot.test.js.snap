@@ -11,3 +11,27 @@ exports[`Take a snapshot should take a snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`renders ok should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      Testing 1
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders ok should take a snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      Testing 1
+    </h1>
+  </div>
+</DocumentFragment>
+`;
