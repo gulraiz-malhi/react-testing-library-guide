@@ -5,8 +5,8 @@ const TestAxios = ({ url }) => {
   const [data, setData] = React.useState()
 
   const fetchData = async () => {
-    const response = await axios.get(url)
-    setData(response.data.greeting)    
+    const response = await axios.get(url);
+    setData(response.data.total)    
  }     
  
  return (
@@ -18,8 +18,6 @@ const TestAxios = ({ url }) => {
     <h1 data-testid="loading">Loading...</h1>
     }
   </>
-     )
-
-}
+)}
 
 export default TestAxios

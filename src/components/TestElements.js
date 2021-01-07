@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const TestElements = () => {
- const [counter, setCounter] = React.useState(0)
+ const [counter, setCounter] = useState(0)
   
  return (
   <>
