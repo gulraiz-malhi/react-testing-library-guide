@@ -9,4 +9,4 @@
 7. Testing React Router
 8. Testing HTTP Request (axios)
 
-Find the full article on [my blog](https://www.ibrahima-ndaw.com/blog/react-testing-library-guide/)
+Credits: (https://www.ibrahima-ndaw.com/blog/react-testing-library-guide/)

@@ -4,6 +4,7 @@ import {
   screen,
   fireEvent,
   cleanup,
+  waitFor
 } from "@testing-library/react";
 import axiosMock from "axios";
 import TestAxios from "../components/TestAxios";
@@ -33,10 +34,11 @@ describe("<TestAxios />", () => {
     fireEvent.click(getByTestId("fetch-data"));
 
     const greetingData = await screen.findByTestId("show-data");
+    expect(greetingData).toHaveTextContent("10");
 
     expect(axiosMock.get).toHaveBeenCalledTimes(1);
     expect(axiosMock.get).toHaveBeenCalledWith(url);
-    expect(greetingData).toHaveTextContent("10");
+    
   });
 
   // it('should load and display the data 2', async () => {
